@@ -1,24 +1,60 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## productsテーブル
 
-Things you may want to cover:
+|Column|Type|Options|
+|------|----|-------|
+|product_name|text||
 
-* Ruby version
+### Association
+- belongs_to :trade
 
-* System dependencies
 
-* Configuration
+## storage_locationsテーブル
 
-* Database creation
+|Column|Type|Options|
+|------|----|-------|
+|storage_location_name|string||
 
-* Database initialization
+### Association
+- belongs_to :trade
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## staffsテーブル
 
-* Deployment instructions
+|Column|Type|Options|
+|------|----|-------|
+|staff_name|string||
 
-* ...
+### Association
+- belongs_to :trade
+
+
+## buyersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|buyer_name|string||
+
+### Association
+- belongs_to :trade
+
+
+## tradesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|date|string||
+|price|string||
+|payment_date|string||
+|delivery_date|string||
+|buyer|references|foreign_key: true|
+|product|references|foreign_key: true|
+|staff|references|foreign_key: true|
+|storage_location|references|foreign_key: true|
+
+### Association
+- has_many :buyers
+- has_many :products
+- has_many :staffs
+- has_many :storage_locations
