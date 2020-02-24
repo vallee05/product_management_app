@@ -7,7 +7,7 @@
 |product_name|text||
 
 ### Association
-- belongs_to :trade
+- has_many :trades
 
 
 ## storage_locationsテーブル
@@ -17,7 +17,7 @@
 |storage_location_name|string||
 
 ### Association
-- belongs_to :trade
+- has_many :trades
 
 
 ## staffsテーブル
@@ -27,7 +27,7 @@
 |staff_name|string||
 
 ### Association
-- belongs_to :trade
+- has_many :trades
 
 
 ## buyersテーブル
@@ -37,7 +37,7 @@
 |buyer_name|string||
 
 ### Association
-- belongs_to :trade
+- has_many :trades
 
 
 ## tradesテーブル
@@ -54,7 +54,7 @@
 |storage_location|references|foreign_key: true|
 
 ### Association
-- has_many :buyers
-- has_many :products
-- has_many :staffs
-- has_many :storage_locations
+- belongs_to :buyer
+- belongs_to :product
+- belongs_to :staff
+- belongs_to :storage_location
