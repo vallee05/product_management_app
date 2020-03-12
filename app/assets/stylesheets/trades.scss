@@ -1,0 +1,168 @@
+html{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6091d3;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+.input-button {
+  font-size: 20px;
+  margin: 30px 250px 30px 50px;
+  padding: 0.5em 1em;
+  color: #6091d3;/*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
+}
+
+.info-container {
+  padding: 0.5em 1em;
+  margin: 2em 50px;
+  font-weight: bold;
+  color: #6091d3;/*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
+  display: flex;
+}
+
+.info-date {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0 8px 20px;
+
+}
+
+.info-name {
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  padding: 10px 0 8px 10px;
+}
+
+.buyer-container li {
+  display: flex;
+  width: 500px;
+
+}
+
+.buyer-container {
+  list-style: none;
+  height: 100px;
+  display: flex;
+  color: gray;
+  font-size: 30px;
+  border-bottom: solid 2px orange;
+  width: 1000px;
+  margin: auto;
+  // margin: 0 auto;
+}
+
+.buyer-name {
+  display: inline-block;
+  margin: auto;
+}
+
+.reception-day {
+  display: inline-block;
+  margin: auto;
+}
+
+.button-container {
+  font-size: 20px;
+  padding: 0.5em 1em;
+  color: #6091d3;/*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
+}
+
+#delete{
+  font-size: 20px;
+  padding: 0.5em 1em;
+  color: #ff4500;/*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
+}
+
+.new-input {
+  border-bottom: solid 2px #6091d3;
+  margin: 20px 30px 20px 30px;
+}
+
+.form-group {
+  height: 100%;
+  margin: 20px 0 50px 100px;
+  font-size: 25px;
+}
+.guest-name {
+  width: 100%;
+}
+
+.input-form {
+  padding:10px;
+  font-size:1em;
+  font-family:Arial, sans-serif;
+  color:#aaa;
+  border:solid 1px #ccc;
+  margin:0 0 20px;
+  width:300px;
+  -moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-list {
+  display: flex;
+  margin: auto;
+  width: 263.757px;
+  padding: 50px 0 0 0;
+}
+
+.btn-index {
+  display: flex;
+  margin: auto;
+
+  a {
+    margin-right: 10px;
+    text-decoration: none;
+  }
+}
+
+.btn-new {
+  display: flex;
+  margin-left: 130px;
+}
+
+#back-btn {
+  margin-right: 50px;
+  text-decoration: none;
+}
+table.details-container {
+  font-size: 5vh;
+  text-align: center;
+  border: 1px solid gray;
+  margin: 0 auto;
+}
+
+table, td, th {
+  border: 1px solid gray;
+  width: 1200px;
+  height: 80px;
+}
+
+.container {
+  margin: auto;
+  padding-top: 50px;
+}
+
+.container-index {
+  padding: 0;
+  }

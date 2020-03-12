@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get  'products' => 'products#index'
-  # resources :products
+  root to: 'trades#index'
+  resources :trades
+  resources :products, only: [:index]
 end

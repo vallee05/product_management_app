@@ -1,0 +1,48 @@
+%h1.new-input
+  予約詳細
+.container
+  %table.details-container
+    %tr
+      %th.details-information
+        お客様名
+      %td.details-form
+        ヴァレ有生
+      %th.details-information
+        商品名
+      %td.details-form
+        ケアネスSP 500ml
+        ケアネスTR 400ml
+        ホリスティックドライヤー
+        オーディーパブリック 2470 3つ
+    %tr
+      %th.details-information
+        価格(税込)
+      %td.details-form
+        ¥4180
+      %th.details-information
+        連絡
+      %td.details-form
+        3/5 連絡済
+    %tr
+      %th.details-information
+        担当者
+      %td.details-form
+        川松
+      %th.details-information
+        電話番号
+      %td.details-form
+        090-6973-0008
+    %tr
+      %th.details-information
+        支払い日
+      %td.details-form
+        代未
+      %th.details-information
+        メモ
+      %td.details-form
+        特になし
+
+  .btn-list
+    = button_to "戻る", 'trades/index', method: :get, class: "button-container"
+    = button_to "編集", 'trades/index', method: :get, class: "button-container"
+    = button_to "削除", 'trades/index', method: :get, class: "button-container", id: "delete"

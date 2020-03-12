@@ -1,0 +1,49 @@
+%h1.new-input
+  新規登録
+.container
+  = form_for @trade, method: :post do |f|
+    .form-group
+      .guest-name
+        ゲスト名
+      = f.text_field :buyer_id, class: 'input-form', placeholder: '例) ハピネス花子', type: "text", name: "buyer_name"
+    .form-group
+      .product-name
+        商品名
+      = f.text_field :product_id, class: 'input-form', placeholder: '例) ケアネスTR 500ml', name: "product_name"
+    .form-group
+      .product-price
+        価格
+      = f.text_field :price, class: 'input-form', placeholder: '例) ¥4180(税込)', name: "price"
+    .form-group
+      .tel-number
+        電話番号
+      = f.text_field :buyer_id, class: 'input-form', placeholder: '例) 090-1234-5678', name: "tel_number"
+    .form-group
+      .charge-name
+        担当者
+      = f.text_field :staff_id, class: 'input-form', placeholder: '例) ハピネス太郎', name: "staff_name"
+
+    .form-group
+      .payment-date
+        お支払い
+      = f.text_field :payment_date, class: 'input-form', placeholder: '代未 もしくは日付', name: "payment"
+    .form-group
+      .delivery-date
+        お渡し予定日
+      = f.text_field :delivery_date, class: 'input-form', placeholder: '例) 未定 もしくは日付', name: "delivery"
+    .form-group
+      .storage-location
+        保管場所
+      = f.text_field :storage_location_id, class: 'input-form', placeholder: '例) バックルーム', name: "location"
+    .form-group
+      .contact-data
+        連絡の有無
+      %input{type: "text", class: "input-form", name: "contact"}
+    .form-group
+      .memo-data
+        メモ
+      %input{type: "text", class: "input-form", name: "memo"}
+    .btn-new
+      = link_to :back, class: "button-container", id: "back-btn" do
+        戻る
+      = f.submit '登録', class: "button-container", id:"register-btn"
