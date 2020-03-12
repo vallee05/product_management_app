@@ -1,3 +1,3 @@
 class StorageLocation < ApplicationRecord
-  has_many :trades, dependent: :destroy
+  has_many :trades
 end

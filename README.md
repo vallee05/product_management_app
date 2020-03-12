@@ -40,6 +40,26 @@
 - has_many :trades
 
 
+## memosテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|memo|string||
+
+### Association
+- has_many :trades
+
+
+## contactsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|contact_data|string||
+
+### Association
+- has_many :trades
+
+
 ## tradesテーブル
 
 |Column|Type|Options|
