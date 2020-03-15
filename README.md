@@ -12,4 +12,6 @@
 |product|string||
 |staff|string||
 |storage_location|string||
+|memo|string||
+|contact_data|string||
 
