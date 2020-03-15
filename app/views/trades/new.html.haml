@@ -1,11 +1,11 @@
 %h1.new-input
   新規登録
 .container
-  = form_for @trade, method: :post do |f|
+  = form_for @trade do |f|
     .form-group
       .guest-name
         ゲスト名
-      = f.text_field :buyer_id, class: 'input-form', placeholder: '例) ハピネス花子', type: "text", name: "buyer_name"
+      = f.text_field :buyer_id, class: 'input-form', placeholder: '例) ハピネス花子', type: "text"
     .form-group
       .product-name
         商品名
@@ -17,7 +17,7 @@
     .form-group
       .tel-number
         電話番号
-      = f.text_field :buyer_id, class: 'input-form', placeholder: '例) 090-1234-5678', name: "tel_number"
+      -# = f.text_field :buyer_id, class: 'input-form', placeholder: '例) 090-1234-5678', name: "tel_number"
     .form-group
       .charge-name
         担当者
@@ -38,11 +38,11 @@
     .form-group
       .contact-data
         連絡の有無
-      %input{type: "text", class: "input-form", name: "contact"}
+      = f.text_field :contact_id, class: 'input-form', placeholder: '例) 入荷次第連絡', name: "contact"
     .form-group
       .memo-data
         メモ
-      %input{type: "text", class: "input-form", name: "memo"}
+      = f.text_field :memo_id, class: 'input-form', placeholder: '例) 連絡は夕方１７時以降で', name: "memo"
     .btn-new
       = link_to :back, class: "button-container", id: "back-btn" do
         戻る
