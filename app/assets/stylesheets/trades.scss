@@ -14,11 +14,12 @@ html{
 .input-button {
   font-size: 20px;
   margin: 30px 250px 30px 50px;
-  padding: 0.5em 1em;
+  padding: 0.7em 1em;
   color: #6091d3;/*文字色*/
   background: #FFF;
   border: solid 3px #6091d3;/*線*/
   border-radius: 10px;/*角の丸み*/
+  text-decoration: none;
 }
 
 .info-container {
@@ -35,6 +36,7 @@ html{
 .info-date {
   display: inline-block;
   text-align: center;
+  width: 320px;
   padding: 10px 0 8px 20px;
 
 }
@@ -42,7 +44,7 @@ html{
 .info-name {
   display: inline-block;
   text-align: center;
-  width: 250px;
+  width: 380px;
   padding: 10px 0 8px 10px;
 }
 
@@ -61,7 +63,6 @@ html{
   border-bottom: solid 2px orange;
   width: 1000px;
   margin: auto;
-  // margin: 0 auto;
 }
 
 .buyer-name {
@@ -81,6 +82,8 @@ html{
   background: #FFF;
   border: solid 3px #6091d3;/*線*/
   border-radius: 10px;/*角の丸み*/
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #delete{
@@ -110,7 +113,7 @@ html{
   padding:10px;
   font-size:1em;
   font-family:Arial, sans-serif;
-  color:#aaa;
+  color :rgb(10, 10, 10);
   border:solid 1px #ccc;
   margin:0 0 20px;
   width:300px;

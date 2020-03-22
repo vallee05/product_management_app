@@ -2,7 +2,7 @@ class CreateTrades < ActiveRecord::Migration[5.0]
   def change
     create_table :trades do |t|
       t.string :date
-      t.string :buyer
+      t.string :buyer, null: false
       t.string :product
       t.string :price
       t.string :staff

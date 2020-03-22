@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 202002230809490) do
     t.string   "contact_data"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.string   "tel"
   end
 
 end

@@ -1,19 +1,19 @@
 %h1.new-input
   予約一覧
 .container.container-index
-  = button_to "新規登録", 'trades/new',method: :get, class: "input-button"
+  = link_to "新規登録", new_trade_path, class: "input-button"
   .info-container
     .info-name
       名前
     .info-date
       受付日
-- @buyer.each do |buyer|
+- @trade.each do |trade|
   %ul.buyer-container
     %li.buyer-name
-      = buyer.buyer_name
+      = trade.buyer
     %li.reception-day
-      = buyer.created_at
+      = trade.updated_at.strftime("%Y-%m-%d")
     %li.btn-index
-      = link_to "詳細", 'trades/show', method: :get, class: "button-container"
-      = link_to "編集", 'trades/edit', method: :get, class: "button-container"
-      = link_to "削除", 'trades/#{trade.id}', method: :delete, class: "button-container", id: "delete"
+      = link_to "詳細", trade_path(trade), class: "button-container"
+      = link_to "編集", edit_trade_path(trade), class: "button-container"
+      = link_to "削除", trade_path(trade), method: :delete, class: "button-container", id: "delete"
