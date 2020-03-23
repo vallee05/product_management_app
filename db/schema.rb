@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 202002230809490) do
+ActiveRecord::Schema.define(version: 20200323152642) do
 
   create_table "trades", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "date"
-    t.string   "buyer"
+    t.string   "buyer",            null: false
     t.string   "product"
     t.string   "price"
     t.string   "staff"
@@ -23,9 +23,9 @@ ActiveRecord::Schema.define(version: 202002230809490) do
     t.string   "storage_location"
     t.string   "memo"
     t.string   "contact_data"
+    t.string   "tel"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
-    t.string   "tel"
   end
 
 end

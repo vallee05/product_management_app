@@ -11,6 +11,7 @@ class CreateTrades < ActiveRecord::Migration[5.0]
       t.string :storage_location
       t.string :memo
       t.string :contact_data
+      t.string :tel
       t.timestamps
     end
   end
