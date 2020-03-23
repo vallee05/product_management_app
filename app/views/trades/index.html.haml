@@ -16,4 +16,4 @@
     %li.btn-index
       = link_to "詳細", trade_path(trade), class: "button-container"
       = link_to "編集", edit_trade_path(trade), class: "button-container"
-      = link_to "削除", trade_path(trade), method: :delete, class: "button-container", id: "delete"
+      = link_to "削除", trade_path(trade), method: :delete, data: { confirm: '削除しますか？' }, class: "button-container", id: "delete"

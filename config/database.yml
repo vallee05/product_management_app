@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: product_management_app_production
-  username: product_management_app
-  password: <%= ENV['PRODUCT_MANAGEMENT_APP_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
